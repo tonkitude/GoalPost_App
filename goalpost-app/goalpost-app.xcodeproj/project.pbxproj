@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		589D38DF29BB282900692552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D38DE29BB282900692552 /* AppDelegate.swift */; };
+		589D38E129BB282900692552 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D38E029BB282900692552 /* SceneDelegate.swift */; };
+		589D38E329BB282900692552 /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D38E229BB282900692552 /* GoalsVC.swift */; };
+		589D38E629BB282900692552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589D38E429BB282900692552 /* Main.storyboard */; };
+		589D38E929BB282900692552 /* goalpost_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 589D38E729BB282900692552 /* goalpost_app.xcdatamodeld */; };
+		589D38EB29BB282A00692552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589D38EA29BB282A00692552 /* Assets.xcassets */; };
+		589D38EE29BB282A00692552 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589D38EC29BB282A00692552 /* LaunchScreen.storyboard */; };
+		589D38FB29BB547C00692552 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589D38FA29BB547C00692552 /* GoalCell.swift */; };
+		58AF440D29D37EFA00EE9AF5 /* UndoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AF440C29D37EFA00EE9AF5 /* UndoType.swift */; };
+		58D36C9729DDAFFF005D0C27 /* CurrentGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D36C9629DDAFFF005D0C27 /* CurrentGoal.swift */; };
+		58F9057329BC82F800722F5F /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F9057229BC82F800722F5F /* GoalType.swift */; };
+		58F9057529BCA8D500722F5F /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F9057429BCA8D500722F5F /* CreateGoalVC.swift */; };
+		58F9057729BCDF1900722F5F /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F9057629BCDF1900722F5F /* UIViewControllerExt.swift */; };
+		58F9057929C0E01100722F5F /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F9057829C0E01100722F5F /* UIViewExt.swift */; };
+		58F9057B29C0F5B100722F5F /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F9057A29C0F5B100722F5F /* UIButtonExt.swift */; };
+		58F9057D29C24C3700722F5F /* FinishGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F9057C29C24C3700722F5F /* FinishGoalVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		589D38DB29BB282900692552 /* goalpost-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "goalpost-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		589D38DE29BB282900692552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		589D38E029BB282900692552 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		589D38E229BB282900692552 /* GoalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
+		589D38E529BB282900692552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		589D38E829BB282900692552 /* goalpost_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = goalpost_app.xcdatamodel; sourceTree = "<group>"; };
+		589D38EA29BB282A00692552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		589D38ED29BB282A00692552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		589D38EF29BB282A00692552 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		589D38FA29BB547C00692552 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		58AF440C29D37EFA00EE9AF5 /* UndoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoType.swift; sourceTree = "<group>"; };
+		58D36C9629DDAFFF005D0C27 /* CurrentGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentGoal.swift; sourceTree = "<group>"; };
+		58F9057229BC82F800722F5F /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
+		58F9057429BCA8D500722F5F /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
+		58F9057629BCDF1900722F5F /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		58F9057829C0E01100722F5F /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		58F9057A29C0F5B100722F5F /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		58F9057C29C24C3700722F5F /* FinishGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		589D38D829BB282900692552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		589D38D229BB282900692552 = {
+			isa = PBXGroup;
+			children = (
+				589D38DD29BB282900692552 /* goalpost-app */,
+				589D38DC29BB282900692552 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		589D38DC29BB282900692552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				589D38DB29BB282900692552 /* goalpost-app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		589D38DD29BB282900692552 /* goalpost-app */ = {
+			isa = PBXGroup;
+			children = (
+				589D38F929BB287C00692552 /* Extensions */,
+				589D38F829BB287300692552 /* Enums */,
+				589D38F629BB286100692552 /* Views */,
+				589D38F529BB283700692552 /* Controller */,
+				589D38DE29BB282900692552 /* AppDelegate.swift */,
+				589D38E029BB282900692552 /* SceneDelegate.swift */,
+				589D38E429BB282900692552 /* Main.storyboard */,
+				589D38EA29BB282A00692552 /* Assets.xcassets */,
+				589D38EC29BB282A00692552 /* LaunchScreen.storyboard */,
+				589D38EF29BB282A00692552 /* Info.plist */,
+				589D38E729BB282900692552 /* goalpost_app.xcdatamodeld */,
+			);
+			path = "goalpost-app";
+			sourceTree = "<group>";
+		};
+		589D38F529BB283700692552 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				589D38E229BB282900692552 /* GoalsVC.swift */,
+				58F9057429BCA8D500722F5F /* CreateGoalVC.swift */,
+				58F9057C29C24C3700722F5F /* FinishGoalVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		589D38F629BB286100692552 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				589D38FA29BB547C00692552 /* GoalCell.swift */,
+				58D36C9629DDAFFF005D0C27 /* CurrentGoal.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		589D38F829BB287300692552 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				58F9057229BC82F800722F5F /* GoalType.swift */,
+				58AF440C29D37EFA00EE9AF5 /* UndoType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		589D38F929BB287C00692552 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				58F9057629BCDF1900722F5F /* UIViewControllerExt.swift */,
+				58F9057829C0E01100722F5F /* UIViewExt.swift */,
+				58F9057A29C0F5B100722F5F /* UIButtonExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		589D38DA29BB282900692552 /* goalpost-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589D38F229BB282A00692552 /* Build configuration list for PBXNativeTarget "goalpost-app" */;
+			buildPhases = (
+				589D38D729BB282900692552 /* Sources */,
+				589D38D829BB282900692552 /* Frameworks */,
+				589D38D929BB282900692552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "goalpost-app";
+			productName = "goalpost-app";
+			productReference = 589D38DB29BB282900692552 /* goalpost-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		589D38D329BB282900692552 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					589D38DA29BB282900692552 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 589D38D629BB282900692552 /* Build configuration list for PBXProject "goalpost-app" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 589D38D229BB282900692552;
+			productRefGroup = 589D38DC29BB282900692552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				589D38DA29BB282900692552 /* goalpost-app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		589D38D929BB282900692552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589D38EE29BB282A00692552 /* LaunchScreen.storyboard in Resources */,
+				589D38EB29BB282A00692552 /* Assets.xcassets in Resources */,
+				589D38E629BB282900692552 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		589D38D729BB282900692552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58F9057929C0E01100722F5F /* UIViewExt.swift in Sources */,
+				58F9057B29C0F5B100722F5F /* UIButtonExt.swift in Sources */,
+				589D38E329BB282900692552 /* GoalsVC.swift in Sources */,
+				58F9057529BCA8D500722F5F /* CreateGoalVC.swift in Sources */,
+				58F9057729BCDF1900722F5F /* UIViewControllerExt.swift in Sources */,
+				58F9057D29C24C3700722F5F /* FinishGoalVC.swift in Sources */,
+				589D38DF29BB282900692552 /* AppDelegate.swift in Sources */,
+				58D36C9729DDAFFF005D0C27 /* CurrentGoal.swift in Sources */,
+				58F9057329BC82F800722F5F /* GoalType.swift in Sources */,
+				589D38E929BB282900692552 /* goalpost_app.xcdatamodeld in Sources */,
+				58AF440D29D37EFA00EE9AF5 /* UndoType.swift in Sources */,
+				589D38FB29BB547C00692552 /* GoalCell.swift in Sources */,
+				589D38E129BB282900692552 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		589D38E429BB282900692552 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				589D38E529BB282900692552 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		589D38EC29BB282A00692552 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				589D38ED29BB282A00692552 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		589D38F029BB282A00692552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		589D38F129BB282A00692552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		589D38F329BB282A00692552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T789KD825A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "goalpost-app/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Yashika.goalpost-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		589D38F429BB282A00692552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T789KD825A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "goalpost-app/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Yashika.goalpost-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		589D38D629BB282900692552 /* Build configuration list for PBXProject "goalpost-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589D38F029BB282A00692552 /* Debug */,
+				589D38F129BB282A00692552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589D38F229BB282A00692552 /* Build configuration list for PBXNativeTarget "goalpost-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589D38F329BB282A00692552 /* Debug */,
+				589D38F429BB282A00692552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		589D38E729BB282900692552 /* goalpost_app.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				589D38E829BB282900692552 /* goalpost_app.xcdatamodel */,
+			);
+			currentVersion = 589D38E829BB282900692552 /* goalpost_app.xcdatamodel */;
+			path = goalpost_app.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 589D38D329BB282900692552 /* Project object */;
+}
